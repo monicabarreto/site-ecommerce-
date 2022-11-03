@@ -1,0 +1,139 @@
+body {
+ font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+}
+nav {
+    background-color: rgb(84, 16, 139);
+    color: white;
+    padding: 10px 30px;
+ 
+    
+}
+.navtop{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+
+}
+.seach{   
+    display: flex;
+     align-items: center;
+    background-color: rgb(226, 223, 223);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+
+}
+.searchinput {   
+  background-color: transparent;
+  border: none;
+
+
+}
+.searchinput::placeholder {
+    color: rgb(52, 52, 53);
+ 
+}
+.ofertalimitada {
+    font-size: 20px;
+    border-bottom: 2px Solid rgb(236, 247, 85);
+    cursor: pointer;
+}
+.navbotton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem {
+    margin: 60px;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+.sliderimg{
+        justify-content: center;
+        padding: 100px;
+        width: 300px;
+        height: 30vw;
+        border-radius: 10px;
+    }
+.slider {
+   background: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
+   background-size: 100% auto;
+   clip-path: polygon(0 0, 100% 0, 100% 93%, 0 81%);
+
+}
+
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+.slideritem {
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+
+}
+.sliderBg{ 
+      width: 600px;
+    height: 550px;
+ 
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(247, 233, 113);
+}
+.sliderimg{
+    z-index: 1;
+}
+.slidertitle {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    font-size: 50px;
+    font-weight: 900;
+    color: aliceblue;
+    z-index: 1;
+
+}
+.slideprice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: aliceblue;
+    z-index: 1;
+
+
+}
+.buybutton{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    font-size: 30px;
+    font-weight: 900;
+    color: aliceblue;
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgb(17, 18, 19);
+    border-radius: 8px;
+    border: none;
+}
+.buybutton:hover {
+    background-color: white;
+    color: rgb(12, 13, 14);
+
+}
+.slideritem:nth-child(1) .sliderBg {
+    background-color: white;
+}
+.slideritem:nth-child(){
+    background-color: rgb(17, 120, 209);
+}
