@@ -4,10 +4,9 @@ padding: 0;
 margin: 0;
 }
 nav {
-    background-color: rgb(84, 16, 139);
+    background-color:  rgb(110, 0, 153);
     color: white;
-    padding: 10px 30px;
- 
+    padding: 10px 30px; 
     
 }
 .navtop{
@@ -38,38 +37,42 @@ nav {
 }
 .ofertalimitada {
     font-size: 20px;
-    border-bottom: 2px Solid rgb(236, 247, 85);
+    border-bottom: 2px Solid rgb(228, 241, 40);
     cursor: pointer;
 }
 .navbotton{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.menuitem {
+    justify-content: space-between;
     margin: 60px;
     cursor: pointer;
     font-weight: 400;
 
 }
+.menuitem {
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 300;
+
+}
 .sliderimg{
         justify-content: center;
         padding: 100px;
-        width: 300px;
-        height: 30vw;
+        width: 400px;
+        height: 50vw;
         border-radius: 10px;
     }
 .slider {
-   background: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
-   background-size: 100% auto;
-   clip-path: polygon(0 0, 100% 0, 100% 93%, 0 81%);
+   background: rgb(253, 136, 57) no-repeat;
+  
+   /*clip-path: polygon(0 0, 100% 0, 100% 93%, 0 81%);*/
 
 }
 
 .sliderwrapper{
     display: flex;
     width: 500vw;
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 .slideritem {
 width: 100vw;
@@ -80,23 +83,25 @@ position: relative;
 
 }
 .sliderBg{ 
+    background-color: rgb(136, 10, 185);
       width: 600px;
-    height: 550px;
- 
+    height: 550px; 
     border-radius: 50%;
     position: absolute;
-    background-color: rgb(247, 233, 113);
+    box-shadow: rgba(206, 206, 102, 0.4) 5px 5px, rgba(236, 236, 208, 0.3) 10px 10px, rgba(172, 95, 145, 0.2) 15px 15px, rgba(250, 225, 145, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
 }
 .sliderimg{
     z-index: 1;
 }
 .slidertitle {
     position: absolute;
-    top: 10%;
+    top: 23%;
     right: 7%;
     font-size: 50px;
     font-weight: 900;
-    color: aliceblue;
+    color: rgb(240, 248, 255);
+    text-shadow: 2px 2px 5px rgb(96, 22, 146);
     z-index: 1;
 
 }
@@ -105,7 +110,7 @@ position: relative;
     top: 10%;
     left: 10%;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     color: aliceblue;
     z-index: 1;
@@ -114,7 +119,7 @@ position: relative;
 }
 .buybutton{
     position: absolute;
-    top: 50%;
+    top: -auto;
     right: 8%;
     font-size: 30px;
     font-weight: 900;
@@ -131,9 +136,39 @@ position: relative;
     color: rgb(12, 13, 14);
 
 }
-.slideritem:nth-child(1) .sliderBg {
-    background-color: white;
+
+.features{    
+    display: flex;   
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+ 
+   
 }
-.slideritem:nth-child(){
-    background-color: rgb(17, 120, 209);
+.feature{
+    display: flex;       
+    flex-direction: column;     
+    align-items: center;
+    text-align: center;
+
 }
+ .fogueteicon{
+    flex-direction: row;  
+        width: 50px;
+        height: 50px;   
+
+    }
+
+ .foguetetitle{
+    
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    color: green;
+     }
+
+        .foguetedescrição {
+            color: rgb(53, 52, 52);
+            width: 50%;
+            height: 100px;
+        }
